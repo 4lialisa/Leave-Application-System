@@ -129,9 +129,22 @@ Go to http://localhost/leaveApplicationSystem
 To protect sensitive code and credentials, there are a few code **not uploaded** to this repository.  
 Below are screenshots of the **Admin Dashboard interface**, demonstrating the key features visually.
 
-| Feature | Screenshot |
-|----------|-------------|
-| Admin Dashboard | <img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/daaef91c-73a4-4507-935d-61426e92b890" /> |
-| Application History | <img width="900" height="400" alt="Image" src="https://github.com/user-attachments/assets/f612f7fe-9546-4ffd-9850-2a9a1f86bedf" /> |
-| Reset Employee Leave | <img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/242f0f03-66c4-4a13-919f-d90728403ed6" /> |
-| Productivity Calendar (Google API) | <img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/7df03275-e7e0-418f-91ad-56adc8ff8f43" /> |
+<p align="center" style="margin-bottom: 30px;">
+  <h3 style="font-size: 22px; margin-bottom: 10px;">🧭 Admin Dashboard</h3>
+  <img width="700" height="600" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/daaef91c-73a4-4507-935d-61426e92b890" />
+</p>
+
+<p align="center" style="margin-bottom: 30px;">
+  <h3 style="font-size: 22px; margin-bottom: 10px;">📋 Application History</h3>
+  <img width="700" height="600" alt="Application History" src="https://github.com/user-attachments/assets/f612f7fe-9546-4ffd-9850-2a9a1f86bedf" />
+</p>
+
+<p align="center" style="margin-bottom: 30px;">
+  <h3 style="font-size: 22px; margin-bottom: 10px;">🔄 Reset Employee Leave</h3>
+  <img width="700" height="600" alt="Reset Employee Leave" src="https://github.com/user-attachments/assets/242f0f03-66c4-4a13-919f-d90728403ed6" />
+</p>
+
+<p align="center" style="margin-bottom: 30px;">
+  <h3 style="font-size: 22px; margin-bottom: 10px;">📅 Productivity Calendar (Google API)</h3>
+  <img width="700" height="600" alt="Productivity Calendar (Google API)" src="https://github.com/user-attachments/assets/7df03275-e7e0-418f-91ad-56adc8ff8f43" />
+</p>
