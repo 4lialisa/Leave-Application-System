@@ -115,3 +115,23 @@ Import the file `leaveapplicationsystem_sql.txt`.
 # 4️⃣ Access system
 Start Apache and MySQL in XAMPP Control Panel
 Go to http://localhost/leaveApplicationSystem
+
+```
+### 🧑‍💼 Default Demo Login (Local Testing Only)
+| Role | Username | Password |
+|------|-----------|-----------|
+| Employee (demo) | G4972834 | YuTing!5678 
+
+---
+
+## 📸 Screenshots (Admin View)
+
+To protect sensitive code and credentials, there are a few code **not uploaded** to this repository.  
+Below are screenshots of the **Admin Dashboard interface**, demonstrating the key features visually.
+
+| Feature | Screenshot |
+|----------|-------------|
+| Admin Dashboard | <img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/daaef91c-73a4-4507-935d-61426e92b890" /> |
+| Application History | <img width="900" height="400" alt="Image" src="https://github.com/user-attachments/assets/f612f7fe-9546-4ffd-9850-2a9a1f86bedf" /> |
+| Reset Employee Leave | <img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/242f0f03-66c4-4a13-919f-d90728403ed6" /> |
+| Productivity Calendar (Google API) | <img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/7df03275-e7e0-418f-91ad-56adc8ff8f43" /> |
