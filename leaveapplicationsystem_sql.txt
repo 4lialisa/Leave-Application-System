@@ -1,0 +1,260 @@
+-- Delete database if it exists
+
+DROP DATABASE IF EXISTS leaveapplicationsystem;
+
+
+-- Create database:
+
+CREATE DATABASE leaveapplicationsystem;
+
+
+-- Create table employee:  
+
+USE LeaveApplicationSystem;
+
+CREATE TABLE employee (
+    employee_id VARCHAR(10) PRIMARY KEY NOT NULL,
+    employee_name VARCHAR(100) NOT NULL,
+    employee_gender ENUM('M', 'F') NOT NULL,
+    employment_date DATE NOT NULL,
+    department VARCHAR(20) NOT NULL,
+    position VARCHAR(50) NOT NULL,
+    annual_leave INT NOT NULL,
+    sick_leave INT NOT NULL,
+    hospitalisation_leave INT NOT NULL
+);
+
+
+-- Insert the data
+
+INSERT INTO employee (employee_id, employee_name, employee_gender, employment_date, department, position, annual_leave, sick_leave, hospitalisation_leave) VALUES
+('G3829175', 'Lim Fang Yin', 'F', '2024-01-02', 'IT', 'CIO',10, 0, 0),
+('G4972834', 'Wong Yu Ting', 'F', '2022-01-02', 'MARKETING', 'Marketing Director',4, 0, 0),
+('G4972844', 'Chang Zi Jin', 'M', '2010-01-02', 'LEGAL', 'General Counsel',7, 0, 0),
+('G6204957', 'Alia', 'F', '2019-06-30', 'HR', 'CHRO',15, 0, 0),
+('G8173629', 'Ahmad Azlan', 'M', '2019-06-29', 'SALES', 'Business Development Representative',6, 0, 0),
+('G2418795', 'Lim Wei Ling', 'F', '2022-06-30', 'SALES', 'Account Manager',1, 0, 0),
+('G5318429', 'Aishah Rahman', 'M', '2022-06-29', 'MARKETING', 'Brand Strategist',-2, 0, 0),
+('G7896512', 'Tan Mei Ling', 'F', '2022-07-01', 'MARKETING', 'Content Creator',11, 0, 0),
+('G3952841', 'Siti Nurhaliza', 'F', '2019-07-01', 'HR', 'Training and Development Officer',2, 0, 0),
+('G6051289', 'Rajesh Kumar', 'M', '2003-06-30', 'MARKETING', 'SEO Specialist',3, 0, 0),
+('G4182756', 'Noor Aini', 'F', '2018-07-31', 'LEGAL', 'Corporate Lawyer',16, 0, 0),
+('G7539182', 'Chan Kok Leong', 'M', '2022-06-30', 'MARKETING', 'Social Media Coordinator',-1, 0, 0),
+('G6892471', 'Nurul Hidayah', 'F', '2003-08-24', 'HR', 'HR Coordinator',12, 0, 0),
+('G5728391', 'Sanjay Patel', 'M', '2020-02-02', 'HR', 'Recruitment Specialist',14, 0, 0),
+('G8314956', 'Arif Hassan', 'M', '2020-02-02', 'MARKETING', 'Social Media Coordinator',9, 0, 0),
+('G4206958', 'Mohd Faisal', 'M', '2022-06-30', 'IT', 'Network Engineer',0, 0, 0),
+('G2384716', 'Suresh Nair', 'M', '2019-06-30', 'IT', 'IT Manager',4, 0, 0),
+('G6793841', 'Wong Siew Mei', 'F', '2019-06-30', 'SALES', 'Sales Executive',6, 0, 0),
+('G5837192', 'Lee Siew Fong', 'M', '2018-07-31', 'SALES', 'Sales Coordinator',7, 0, 0),
+('G9418752', 'Smith Eward', 'M', '2018-07-31', 'IT', 'System Administrator',8, 0, 0),
+('G6219845', 'Faridah Hassan', 'M', '2018-07-31', 'SALES', 'Sales Manager',2, 0, 0),
+('G7832451', 'Teh Li Ann', 'M', '2024-01-02', 'IT', 'Software Developer',13, 0, 0),
+('G5192834', 'Tan Cheng Siew', 'F', '2024-01-02', 'MARKETING', 'Marketing Manager',1, 0, 0),
+('G2958417', 'Amina Zakaria', 'M', '2021-01-02', 'HR', 'Payroll Specialist',5, 0, 0),
+('G7628394', 'Ariffin Ismail', 'M', '2023-01-02', 'IT', 'Technical Support Specialist',0, 0, 0),
+('G8375124', 'Liew Wei Jie', 'M', '2019-06-30', 'MARKETING', 'Content Creator',5, 0, 0),
+('G4857193', 'Anisa Ahmad', 'M', '2019-06-30', 'HR', 'HR Manager',8, 0, 0),
+('G6274915', 'Karthik Subramaniam', 'M', '2019-06-30', 'SALES', 'SALES',3, 0, 0),
+('G8745192', 'Leong Jia Hui', 'F', '2019-06-30', 'MARKETING', 'Brand Strategist',14, 0, 0),
+('G3918475', 'Rajini Krishnan', 'M', '2021-04-27', 'IT', 'System Administrator',9, 0, 0),
+('G5183927', 'Harun Abdullah', 'M', '2023-04-27', 'MARKETING', 'Marketing Manager',-1, 0, 0),
+('G2957841', 'Faisal Zainal', 'M', '2021-04-27', 'HR', 'Recruitment Specialist',16, 0, 0),
+('G6428193', 'Chan Li Peng', 'M', '2023-04-27', 'SALES', 'Sales Executive',11, 0, 0),
+('G7182934', 'Kavita Ramesh', 'M', '2022-07-01', 'IT', 'Software Developer',10, 0, 0),
+('G4951723', 'Kumaravel Arasu', 'M', '2022-07-01', 'HR', 'Payroll Specialist',12, 0, 0),
+('G8791235', 'Gan Mei Yee', 'F', '2022-07-01', 'MARKETING', 'Social Media Coordinator',13, 0, 0),
+('G5218739', 'Roslan Mahmud', 'M', '2021-01-02', 'SALES', 'Account Manager',15, 0, 0),
+('G6748912', 'Noraini Hamid', 'M', '2022-01-02', 'HR', 'HR Coordinator',-2, 0, 0),
+('G3892741', 'Lee Jia Wei', 'M', '2022-01-02', 'MARKETING', 'SEO Specialist',7, 0, 0),
+('G5378219', 'Syafiq Fauzi', 'M', '2003-06-30', 'IT', 'Network Engineer',6, 0, 0),
+('G7812953', 'Lim Siew Lian', 'F', '2023-06-30', 'SALES', 'Sales Coordinator',8, 0, 0),
+('G2498173', 'Maniam Perumal', 'M', '2003-06-30', 'MARKETING', 'Brand Strategist',5, 0, 0),
+('G6193842', 'Hafiz Yusof', 'M', '2018-07-31', 'IT', 'IT Manager',1, 0, 0),
+('G8951723', 'Wong Li Yan', 'F', '2023-07-31', 'LEGAL', 'Corporate Lawyer',0, 0, 0),
+('G3852974', 'Arif Hassan', 'M', '2018-07-31', 'MARKETING', 'Social Media Coordinator',2, 0, 0),
+('G3748291', 'Tan Siew Mun', 'F', '2019-07-01', 'HR', 'Training and Development Officer',4, 0, 0),
+('G5961872', 'Gopal Krishnan', 'M', '2019-07-01', 'IT', 'Technical Support Specialist',3, 0, 0),
+('G8426937', 'James Carnival', 'M', '2019-07-01', 'IT', 'UI/UX Designer',9, 0, 0),
+('G7154938', 'Britney Sam', 'F', '2021-08-24', 'SALES', 'Sales Manager',10, 0, 0),
+('G6532847', 'Thinesh Ramasamy', 'M', '2021-08-24', 'LEGAL', 'Corporate Lawyer',11, 0, 0);
+
+
+-- Procedure to set annual leave and sick leave according to employment date
+
+DELIMITER //
+CREATE PROCEDURE setLeave(IN empID VARCHAR(10))
+BEGIN
+
+DECLARE annual INT;
+DECLARE sick INT;
+DECLARE hospitalisation INT;
+DECLARE emp_date DATE;
+DECLARE yearOfService INT;
+CREATE TABLE result 
+(empDate DATE);
+
+PREPARE stmt FROM CONCAT('INSERT INTO result SELECT employment_date FROM employee WHERE employee_id = \'', empID, '\'');
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+SET emp_date = (SELECT empDate FROM result);
+DROP TABLE result;
+
+SET yearOfService = (SELECT TIMESTAMPDIFF(year, emp_date, NOW()));
+
+IF (yearOfService < 2) THEN
+SET annual = 8;
+SET sick = 14;
+
+ELSEIF (yearOfService < 5) THEN
+SET annual = 12;
+SET sick = 18;
+
+ELSE
+SET annual = 16;
+SET sick = 22;
+
+END IF;
+
+SET hospitalisation = 60;
+UPDATE employee SET annual_leave = annual, sick_leave = sick, hospitalisation_leave = hospitalisation WHERE employee_id = empID;
+
+END //
+DELIMITER ;
+
+
+-- Create procedure to set leave for all employees
+
+DELIMITER //
+CREATE PROCEDURE setAllLeave()
+BEGIN
+
+DECLARE done BOOLEAN DEFAULT FALSE;
+DECLARE empID VARCHAR(10);
+DECLARE cur CURSOR FOR SELECT employee_id FROM employee;
+-- For last row
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET done := TRUE;
+
+OPEN cur;
+
+-- start loop
+eachEmp: LOOP
+FETCH cur INTO empID;
+-- If finished, end loop
+IF done THEN
+LEAVE eachEmp;
+END IF;
+-- Else, set leave
+CALL setLeave(empID);
+END LOOP eachEmp;
+
+CLOSE cur;
+
+END //
+DELIMITER ;
+
+
+-- Call the procedure to set for first time
+CALL setAllLeave();
+
+
+-- Create Login Table:
+
+USE leaveapplicationsystem;
+
+CREATE TABLE login (
+    user VARCHAR(10) NOT NULL,
+    password VARCHAR(15) NOT NULL,
+    session_num INT(6) DEFAULT 0
+);
+
+
+-- Insert all credentials
+
+INSERT INTO login (user, password) VALUES 
+('glamadmin','glamadmin'),
+('G3829175', 'FangYin#1234'),
+('G4972834', 'YuTing!5678'),
+('G4972844', 'ZiJin*9876'),
+('G6204957', 'Alia$4321'),
+('G8173629', 'Azlan@1111'),
+('G2418795', 'WeiLing#2222'),
+('G5318429', 'Aishah$3333'),
+('G7896512', 'MeiLing!4444'),
+('G3952841', 'Nurhaliza*5555'),
+('G6051289', 'Rajesh@6666'),
+('G4182756', 'Aini$7777'),
+('G7539182', 'KokLeong!8888'),
+('G6892471', 'Hidayah*9999'),
+('G5728391', 'Sanjay#1010'),
+('G8314956', 'ArifH#1111'),
+('G4206958', 'Faisal$1212'),
+('G2384716', 'Suresh!1313'),
+('G6793841', 'SiewMei*1414'),
+('G5837192', 'SiewFong@1515'),
+('G9418752', 'SmithE#1616'),
+('G6219845', 'Faridah$1717'),
+('G7832451', 'LiAnn!1818'),
+('G5192834', 'ChengSiew*1919'),
+('G2958417', 'Amina@2020'),
+('G7628394', 'Ismail#2121'),
+('G8375124', 'WeiJie$2222'),
+('G4857193', 'Anisa!2323'),
+('G6274915', 'Karthik*2424'),
+('G8745192', 'JiaHui@2525'),
+('G3918475', 'Rajini#2626'),
+('G5183927', 'Harun$2727'),
+('G2957841', 'Faisal!2828'),
+('G6428193', 'LiPeng*2929'),
+('G7182934', 'Kavita@3030'),
+('G4951723', 'Arasu#3131'),
+('G8791235', 'MeiYee$3232'),
+('G5218739', 'Roslan!3333'),
+('G6748912', 'Noraini*3434'),
+('G3892741', 'JiaWei@3535'),
+('G5378219', 'Syafiq#3636'),
+('G7812953', 'SiewLian$3737'),
+('G2498173', 'Perumal!3838'),
+('G6193842', 'Hafiz*3939'),
+('G8951723', 'LiYan@4040'),
+('G3852974', 'ArifH#4141'),
+('G3748291', 'SiewMun$4242'),
+('G5961872', 'Gopal!4343'),
+('G8426937', 'James*4444'),
+('G7154938', 'Britney@4545'),
+('G6532847', 'Thinesh#4646');
+
+
+-- Create table application
+
+CREATE TABLE application (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    employeeID VARCHAR(50) NOT NULL,
+    startDate date NOT NULL,
+    endDate date NOT NULL,
+    applicationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    actionDate TIMESTAMP NULL DEFAULT NULL,
+    leaveType ENUM('Annual', 'Medical', 'Maternity', 'Paternity', 'Emergency', 'Hospitalisation') NOT NULL,
+    remarks text,
+    attachmentName varchar(255),
+    duration int(11) NOT NULL,
+    status varchar(15)  NOT NULL DEFAULT 'Pending',
+    paidLeave INT,
+    unpaidLeave INT,
+    eventID varchar(255)	
+);
+
+-- Insert some application records
+
+INSERT INTO application (employeeID, startDate, endDate, applicationDate, duration, leaveType, remarks)
+VALUES
+    ('G2384716', '2024-01-02', '2024-01-05', '2024-01-01 11:33:33', 4, 'Annual', 'Annual leave for personal rest and recreation'),
+    ('G3852974', '2024-02-08', '2024-02-09', '2024-02-01 09:45:13', 2, 'Annual', 'Annual leave to attend personal matters'),
+    ('G6204957', '2024-04-10', '2024-04-11', '2024-03-26 17:12:39', 2, 'Annual', 'Leave for personal reasons'),
+    ('G7182934', '2024-04-30', '2024-05-03', '2024-04-14 13:25:01', 3, 'Annual', 'Annual leave to relax and rejuvenate'),
+    ('G8745192', '2024-05-06', '2024-05-06', '2024-05-03 16:47:23', 1, 'Medical', 'Medical leave for doctor\'s appointment'),
+    ('G9418752', '2024-05-07', '2024-05-07', '2024-05-07 07:17:03', 1, 'Emergency', 'Emergency leave due to family situation'),
+    ('G5192834', '2024-05-13', '2024-05-13', '2024-05-07 14:13:12', 1, 'Annual', 'Annual leave to attend personal matters'),
+    ('G3829175', '2024-06-02', '2024-06-05', '2024-05-24 12:34:56', 4, 'Annual', 'Attend conference at KL'),
+    ('G3829175', '2024-06-05', '2024-06-07', '2024-05-28 09:18:48', 2, 'Medical', 'Medical check-up'),
+    ('G3829175', '2024-06-30', '2024-10-05', '2024-06-01 17:20:55', 98, 'Maternity', 'Maternity leave for pregnancy');
