@@ -115,10 +115,3 @@ Import the file `leaveapplicationsystem_sql.txt`.
 # 4️⃣ Access system
 Start Apache and MySQL in XAMPP Control Panel
 Go to http://localhost/leaveApplicationSystem
-
-```
-✅ **Login to the system**
-| Role | Username | Password |
-|------|-----------|-----------|
-| Admin | glamadmin | glamadmin |
-| Employee (demo) | G4972834 | YuTing!5678 |
