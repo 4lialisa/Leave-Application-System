@@ -126,7 +126,8 @@ Go to http://localhost/leaveApplicationSystem
 
 ## 📸 Screenshots (Admin View)
 
-To protect sensitive code and credentials, there are a few code **not uploaded** to this repository.  
+### Note!!!
+To protect **sensitive code** and **credentials**, there is some code **not uploaded** to this repository.  
 Below are screenshots of the **Admin Dashboard interface**, demonstrating the key features visually.
 
 <p align="center" style="margin-bottom: 30px;">
@@ -135,12 +136,12 @@ Below are screenshots of the **Admin Dashboard interface**, demonstrating the ke
 </p>
 
 <p align="center" style="margin-bottom: 30px;">
-  <h3 style="font-size: 22px; margin-bottom: 10px;">📋 Application History</h3>
+  <h3 style="font-size: 22px; margin-bottom: 10px;">📋 View Application History</h3>
   <img width="700" height="600" alt="Application History" src="https://github.com/user-attachments/assets/f612f7fe-9546-4ffd-9850-2a9a1f86bedf" />
 </p>
 
 <p align="center" style="margin-bottom: 30px;">
-  <h3 style="font-size: 22px; margin-bottom: 10px;">🔄 Reset Employee Leave</h3>
+  <h3 style="font-size: 22px; margin-bottom: 10px;">🔄 View Employees</h3>
   <img width="700" height="600" alt="Reset Employee Leave" src="https://github.com/user-attachments/assets/242f0f03-66c4-4a13-919f-d90728403ed6" />
 </p>
 
