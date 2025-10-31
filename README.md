@@ -128,25 +128,37 @@ Go to http://localhost/leaveApplicationSystem
 
 ### Note!!!
 To protect **sensitive code** and **credentials**, there is some code **not uploaded** to this repository. 
+
 Any inquiries feel free to e-mail me.
+
 Below are screenshots of the **Admin Dashboard interface**, demonstrating the key features visually.
 
-<p align="center" style="margin-bottom: 30px;">
-  <h3 style="font-size: 22px; margin-bottom: 10px;">🧭 Admin Dashboard</h3>
+<p align="center">
+  <strong style="font-size: 22px;">🧭 Admin Dashboard</strong><br><br>
+  <em>This is the main interface for the admin after successfully logging into the system. Here, the admin can approve or reject employees’ leave applications. Before making a decision, the admin can view the employee’s full details by clicking the employee’s ID number. This interface also displays three main function buttons and a logout button.</em><br><br>
   <img width="700" height="600" alt="Admin Dashboard" src="https://github.com/user-attachments/assets/daaef91c-73a4-4507-935d-61426e92b890" />
 </p>
 
-<p align="center" style="margin-bottom: 30px;">
-  <h3 style="font-size: 22px; margin-bottom: 10px;">📋 View Application History</h3>
+<br>
+
+<p align="center">
+  <strong style="font-size: 22px;">📋 View Application History</strong><br><br>
+  <em>This is the Application History interface where the admin can view which employees have been approved or rejected. The admin can also undo previous approval or rejection actions if needed.</em><br><br>
   <img width="700" height="600" alt="Application History" src="https://github.com/user-attachments/assets/f612f7fe-9546-4ffd-9850-2a9a1f86bedf" />
 </p>
 
-<p align="center" style="margin-bottom: 30px;">
-  <h3 style="font-size: 22px; margin-bottom: 10px;">🔄 View Employees</h3>
-  <img width="700" height="600" alt="Reset Employee Leave" src="https://github.com/user-attachments/assets/242f0f03-66c4-4a13-919f-d90728403ed6" />
+<br>
+
+<p align="center">
+  <strong style="font-size: 22px;">🔄 View Employees</strong><br><br>
+  <em>This interface displays the remaining leave balance for each employee. The admin can reset leave days individually for a specific employee or click the “Reset All Leaves” button to reset every employee’s leave record at once.</em><br><br>
+  <img width="700" height="600" alt="View Employees" src="https://github.com/user-attachments/assets/242f0f03-66c4-4a13-919f-d90728403ed6" />
 </p>
 
-<p align="center" style="margin-bottom: 30px;">
-  <h3 style="font-size: 22px; margin-bottom: 10px;">📅 Productivity Calendar (Google API)</h3>
+<br>
+
+<p align="center">
+  <strong style="font-size: 22px;">📅 Productivity Calendar (Google API)</strong><br><br>
+  <em>This calendar helps the admin easily track which employees are currently on leave and which are still working. It provides a clear overview of employee availability through Google Calendar integration.</em><br><br>
   <img width="700" height="600" alt="Productivity Calendar (Google API)" src="https://github.com/user-attachments/assets/7df03275-e7e0-418f-91ad-56adc8ff8f43" />
 </p>
