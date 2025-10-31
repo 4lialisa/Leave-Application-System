@@ -127,7 +127,8 @@ Go to http://localhost/leaveApplicationSystem
 ## 📸 Screenshots (Admin View)
 
 ### Note!!!
-To protect **sensitive code** and **credentials**, there is some code **not uploaded** to this repository.  
+To protect **sensitive code** and **credentials**, there is some code **not uploaded** to this repository. 
+Any inquiries feel free to e-mail me.
 Below are screenshots of the **Admin Dashboard interface**, demonstrating the key features visually.
 
 <p align="center" style="margin-bottom: 30px;">
